@@ -3,21 +3,17 @@ const binary_search = (list, item) => {
   let high = list.length - 1;
 
   while (low <= high) {
-    const mid = Math.floor((low + high) / 2);
-    console.log('mid: ', mid);
-    const guess = list[mid];
-    console.log('guess: ', guess);
+    const midIndex = Math.floor((low + high) / 2);
+    const guess = list[midIndex];
 
     if (guess === item) {
-      return mid;
+      return midIndex;
     }
 
-    if (guess > item) {
-      high = mid - 1;
-      console.log('high: ', high);
+    if (item < guess) {
+      high = midIndex - 1;
     } else {
-      low = mid + 1;
-      console.log('low: ', low);
+      low = midIndex + 1;
     }
   }
 
