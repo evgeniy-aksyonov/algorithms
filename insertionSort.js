@@ -1,6 +1,6 @@
 let arr = [2, 5, 1, 10, 9];
 
-const insertion_sort = arr => {
+const insertionSort = arr => {
   for (let i = 1; i < arr.length; i++) {
     for (let j = 0; j < arr.length; j++) {
       if (arr[i] < arr[j]) {
@@ -17,4 +17,4 @@ const insertion_sort = arr => {
   return arr;
 }
 
-console.log(insertion_sort(arr));
+console.log(insertionSort(arr));

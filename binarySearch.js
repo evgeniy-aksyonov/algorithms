@@ -1,4 +1,4 @@
-const binary_search = (list, item) => {
+const binarySearch = (list, item) => {
   let low = 0;
   let high = list.length - 1;
 
@@ -22,5 +22,5 @@ const binary_search = (list, item) => {
 
 const arr = [2, 5, 12, 25, 42, 66, 167, 200, 390, 441, 449, 2109];
 
-console.log(binary_search(arr, 42)); // 4
-console.log(binary_search(arr, -1)); // null
+console.log(binarySearch(arr, 42)); // 4
+console.log(binarySearch(arr, -1)); // null

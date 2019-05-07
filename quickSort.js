@@ -1,6 +1,6 @@
 const arr = [200, 390, 441, 449, 2109, 2, 5, 12, 25, 42, 66, 167];
 
-const quick_sort = (arr) => {
+const quickSort = (arr) => {
   if (arr.length < 2) {
     return arr;
   }
@@ -16,7 +16,7 @@ const quick_sort = (arr) => {
   const less = arr.filter(item => pivot > item);
   const greater = arr.filter(item => pivot < item);
 
-  return [...quick_sort(less), pivot, ...quick_sort(greater)];
+  return [...quickSort(less), pivot, ...quickSort(greater)];
 }
 
-console.log(quick_sort(arr));
+console.log(quickSort(arr));
