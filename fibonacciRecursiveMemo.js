@@ -22,7 +22,7 @@ function fib(n) {
 
 // const fastFib = memoize(fib); 
 // !IMPORTANT NOTE:
-// If we will assign memoized(fast) version of fin to fastFib
+// If we will assign memoized(fast) version of fib to fastFib
 //  --> then we need to use MEMOIZED(FAST) version for recursion calls:
 
 // function fib(n) {
