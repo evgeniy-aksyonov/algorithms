@@ -33,7 +33,7 @@ function fib(n) {
 //   }
 // }
 
-// So to avoid bugs - it's better to REASSING slow function to memoized(fast) one:
+// So to avoid bugs - it's better to REASSIGN slow function to memoized(fast) one:
 fib = memoize(fib); 
 
 console.log(fib(31));
