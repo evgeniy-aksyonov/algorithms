@@ -13,8 +13,8 @@ const quickSort = (arr) => {
   // with 6 items in the sorted array there will be 3 calls for pivot in the middle and 6 calls for first/last index
   const pivotIndex = Math.floor(arr.length / 2);
   const pivot = arr[pivotIndex];
-  const less = arr.filter(item => pivot > item);
-  const greater = arr.filter(item => pivot < item);
+  const less = arr.filter(item => item < pivot);
+  const greater = arr.filter(item => item > pivot);
 
   return [...quickSort(less), pivot, ...quickSort(greater)];
 }
